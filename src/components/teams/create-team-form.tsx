@@ -52,6 +52,7 @@ export function CreateTeamForm() {
       toast.success("팀이 생성되었습니다.");
       router.push("/teams");
     } catch (error) {
+      console.error("🚀 ~ onSubmit ~ error:", error)
       toast.error("팀 생성에 실패했습니다.");
     }
   }
